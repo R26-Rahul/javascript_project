@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project || Hitesh</title>
+    <style>
+        .box{
+            display: inline-block;
+          width: 40px;
+            height: 40px;
+            border: 2px solid red;
+        }
+        #grey{
+            background-color: gray;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #red{
+            background-color: red;
+        }
+        #yellow{
+            background-color: yellow;
+        }
+        #white{
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <div class="main">
+<h1>Color scheme switcher </h1>
+        <div id="grey" class="box"></div>
+        <div id="blue" class="box"></div>
+        <div id="red" class="box"></div>
+        <div id="yellow" class="box"></div>
+        <div id="white" class="box"></div>
+        <br>
+        <h2>click on colour box and chenged body colour</h2>
+    </div>
+
+<script>
+const boxes=document.querySelectorAll(".box")
+// console.log(boxes);
+const body =document.querySelector('body')
+
+boxes.forEach(function(button){
+    console.log(button);
+
+    button.addEventListener('click', function(c){
+        console.log(c);
+        console.log(c.target);
+        if (c.target.id === "grey") {
+            body.style.backgroundColor=c.target.id;
+            
+        }
+        if (c.target.id === "blue") {
+            body.style.backgroundColor=c.target.id;
+            
+        }
+        if (c.target.id === "red") {
+            body.style.backgroundColor=c.target.id;
+            
+        }
+        if (c.target.id === "yellow") {
+            body.style.backgroundColor=c.target.id;
+            
+        }
+        if (c.target.id === "white") {
+            body.style.backgroundColor=c.target.id;
+            
+        }
+        
+
+    })
+
+})
+
+</script>
+
+</body>
+</html>
