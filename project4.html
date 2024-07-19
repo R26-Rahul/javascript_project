@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Game Play</h1>
+        <h2></h2>
+        <p>try gussess Random Number 1 to 100 </p>
+        <p> You have <span id="gussingAtemp" >10</span> Atemp only</p>
+    </div>
+    <br/>
+    <form class="form">
+        <label id="gussingNumber"> Guess a Number</label>
+            <!-- <input type="text" id="gessingFeild"> -->
+            <input type="submit" id="subt"  >
+    </form>
+    <script>
+        const randumNumber = parseInt(Math.random()*100 + 1)
+        // console.log(randumNumber)
+        const displyN=document.querySelector("h2").innerHTML=randumNumber
+
+        
+    </script>
+</body>
+</html>
